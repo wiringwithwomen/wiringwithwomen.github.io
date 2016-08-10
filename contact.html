@@ -5,15 +5,17 @@
 
 
 <head>
-    <title></title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="bootstrap-3.3.6-dist/css/bootstrap.min.js"></script>
-    <style>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+        <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="bootstrap-3.3.6-dist/css/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
          body{
             background: linear-gradient(rgba(1, 130, 172, 1), #f0f0f0 ); 
         }
@@ -49,7 +51,7 @@
             width: 80%; 
             margin-left: 10%;
             background-color: #f0f0f0; 
-            margin-top: 20px; 
+            margin-top: 0px; 
             text-align: center; 
             height: 1500px;
         }
@@ -92,6 +94,9 @@
             border-width: 3px; 
             background-color: rgba(240, 240, 240, .3)
         }
+        .navbar-default .navbar-right > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+            color:#f0f0f0;
+        }
 
         #inputButton{
             padding: 5px; 
@@ -108,9 +113,23 @@
         #contactText{
             color: black;  
             padding: 5px;  
-            font-size: 24px; 
+            font-size: 20px; 
             font-family: 'Segoe UI light'
         }
+
+         .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+                border-color: rgba(1, 130, 172, 1);
+            }
+
+           .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+                color: #f0f0f0; 
+            }
+            .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+                background-color: #f0f0f0; 
+            }
+            .navbar-default .navbar-nav > li > a{
+                color: #bdbdbd;
+            }
 
         #pageTableContact{
             margin-top: 50px; 
@@ -119,41 +138,129 @@
         }
         #commentBox{
             height: 300px; 
+            width: 500px; 
             border-color: rgba(1,130, 172, 1); 
             border-style: ridge; 
             border-width: 3px; 
             background-color: rgba(240, 240, 240, .3)
         }
+         #horizSection{
+               background-color: rgba(1, 130, 172, 1); border-width: 5px; height: 5px; width: 80%; margin-left: 10%; color: white; font-family: 'Segoe UI Light';  font-size: 20px; padding-top: 7px;
+            }
+            #pageTitle{
+               font-size: 60px; font-family: 'Segoe ui light'; padding: 50px; text-align: center; padding-bottom: 10px;  color: #552d87; letter-spacing: 3px; text-shadow: 1px 0px 1px 1px black;
+            }
 
+        #tableText{
+            color: black; font-size: 20px; font-family: 'Segoe UI light';
+        }
+        #tableTitle{
+            font-size: 32px;
+        }
+        #connect{
+            color: black;  width: 500px; font-size: 20px; padding-left: 50px; padding-right: 25px; font-family: 'Segoe UI light';display: normal;
+        }
+        
+        @media only screen and (max-width: 1400px) and (min-width: 750px){
+
+
+                #footerCSS {
+                    font-size: 12px;
+                }
+                #tableTitle{
+                    font-size: 28px;
+                }
+                #subTitle{
+                    font-size: 24px; 
+                    
+                }
+
+                #pageTitle {
+                    width: 100%;
+                    font-size: 40px;
+                }
+                .calendar{
+                    padding-left: 2%; 
+                    width: 80%; 
+                    padding-right: 2%; 
+                }
+
+                #commentBox{
+                    width: 500px; 
+                }
+                #connect{
+                    display: none; 
+                }
+  
+                  
+            }
+            @media only screen and (max-width: 750px) {
+
+                #commentBox{
+                    width: 300px; 
+                    height: 200px;
+                    padding-right: 50px; 
+                }
+
+                #footerCSS {
+                    font-size: 10px;
+                }
+                #tableTitle{
+                    font-size: 24px;
+                }
+
+                 #subTitle{
+                    font-size: 24px; 
+                    
+                }
+
+                #pageTitle {
+                    width: 100%;
+                    font-size: 40px;
+                }
+                .calendar{
+                    padding-left: 2%; 
+                    width: 80%; 
+                    padding-right: 2%; 
+                }
+                #connect{
+                    display: none; 
+                }
+            }
     </style>
 
 </head>
 
 <body>
-    <nav id="navBar" class="navbar navbar-default" style="width: 100%; position: absolute; top: 0px; border-style: none; border-bottom-style: groove; border-color: rgba(1, 130, 172, 1); border-width: 5px; background-color:#413f4d; box-shadow: 2px 2px 20px 2px #413f4d">
-        <div class="collapse navbar-collapse" id="myNavbar" style="margin-right: 30px">
-            <ul class="nav navbar-nav navbar-left">
-                <li><img src="wiringwithwomenlogo.png" style="width: 50px; margin-top: -2px" /></li>
-                <li><a  id="title" href="#Home">Wiring With Women</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
+    <nav class="navbar navbar-default" style="border-style: none; border-bottom-style: groove; border-color: rgba(1, 130, 172, 1); border-width: 5px; background-color:#413f4d; box-shadow: 2px 2px 20px 2px #413f4d">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-right: 30px;">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="color:#bdbdbd">Wiring With Women</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Events</a></li>
+                    <li><a href="People.html">People</a></li>
+                    <li class="active"><a href="contact.html">Contact</a><li>
+                </ul>
 
-                <li><a id="navItems" href="index.html">HOME</a></li>
-                <li><a id="navItems" href="about.html">EVENTS</a></li>
-                <li><a id="navItems" href="People.html">PEOPLE</a></li>
-                <li><a id="navItems" href="contact.html">CONTACT</a></li>
-
-            </ul>
+            </div>
         </div>
-
     </nav>
+
     <div id="mainPage">
         <div id="pageTitle">Contact Us</div>
-        <div id="subPage" valign="middle" align="right"></div>
-        <table align="left" id="pageTableContact">
+        <div id="horizSection" valign="middle" align="right"></div>
+        <table align="left" id="pageTableContact" style="width: 80%;"class="table-responsive">
             <tr style="width: 60%">
-                <td valign="top" align="left" style="color: black; font-size: 20px; font-family: 'Segoe UI light'">
-                    <h1 style="font-size: 40px">Questions? Send us an Email!</h1><br />
+                <td valign="top" align="left" id="tableText">
+                    <h1 id="tableTitle">Questions? Send us an Email!</h1><br />
                     <form action="MAILTO:dukedubcubed@gmail.com" method="post" enctype="text/plain">
                         Name:<br>
                         <input type="text" id="input1" name="name" value=""><br><br />
@@ -166,21 +273,18 @@
 
                     </form>
                 </td>
-                <td valign="middle" align="center" style="color: black;  width: 40%; font-size: 20px; font-family: 'Segoe UI light'">
-                    <div style="border-style: ridge; border-width: 20px;  border-color:#552d87;">
+                <td valign="middle" id="connect" align="left" style="width: 48%; padding-left: 50px; ">
+                    <div align="left"style="border-style: ridge; border-width: 20px; width: 100%; padding: 20px; padding-top: 30px; padding-left: 10px;  border-color:#552d87" >
 
-                        <h1 align="left" style="padding-bottom: 5px; padding-top: 10px; padding-left: 50px; font-size: 40px">Connect With Us!</h1><br />
+                        <div align="left" style="font-size: 32px; padding-left: 20px; ">Connect With Us!</div><br />
 
-                        <div style="font-size: 18px; text-align: left; padding: 20px; padding-left: 50px ">
-
-
+                        <div style="font-size: 18px; text-align: left; padding-left: 20px ">
                             <img src="FB-FindUsonFacebook-online-144.png" style="padding-left: 5px;cursor: pointer" onclick="location.href='https://www.facebook.com/groups/744561652317777/'" />
                             <h2 id="contactText">Location: Duke University</h2>
                           
-                            <h2 id="contactText">Email: dukedubcubed@gmail.com</h2>
+                            <h2 id="contactText"><strong>Email: </strong><br />  dukedubcubed@gmail.com</h2>
 
                             <div style="margin-top: 25px; margin-left: 6px">
-
 
                             </div>
                         </div>

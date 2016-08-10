@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  
+        <title>Bootstrap Case</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <style>
+        body {
+            background: linear-gradient(rgba(1, 130, 172, 1), #f0f0f0 );
+        }
+
+        #navBar {
+            position: absolute;
+            top: 0px;
+            border-style: none;
+            border-bottom-style: groove;
+            border-color: rgba(1, 130, 172, 1);
+            border-width: 5px;
+            background-color: #413f4d;
+            box-shadow: 2px 2px 20px 2px #413f4d;
+            width: 100%;
+        }
+
+        #myNavbar {
+            margin-right: 30px;
+        }
+
+        #title {
+            color: #f0f0f0;
+            font-size: 20px;
+            font-family: "Segoe UI";
+            letter-spacing: 2px;
+        }
+
+        #navItems {
+            color: #f0f0f0;
+            font-family: Consolas;
+            font-size: 20px;
+        }
+
+        #mainPage {
+            width: 80%;
+            margin-left: 10%;
+            background-color: #f0f0f0;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #pageTitle {
+            font-size: 60px;
+            font-family: 'Segoe UI light';
+            padding: 50px;
+            padding-bottom: 10px;
+            color: #552d87;
+            letter-spacing: 3px;
+            text-shadow: 1px 0px 1px 1px black;
+        }
+
+        #subPage {
+            background-color: rgba(1, 130, 172, 1);
+            border-width: 5px;
+            height: 5px;
+            width: 60%;
+            margin-left: 20%;
+            color: white;
+            font-family: 'Segoe UI Light';
+            font-size: 20px;
+            padding-top: 7px;
+        }
+
+        #footerCSS {
+            background-color: #f0f0f0;
+            border-width: 5px;
+            width: 100%;
+            color: #552d87;
+            font-family: 'Segoe UI Light';
+            font-size: 20px;
+            padding: 10px;
+            padding-bottom: 15px;
+        }
+
+        .title {
+            width: 100%;
+            padding: 50px;
+            padding-bottom: 0px;
+            font-family: 'segoe ui light';
+            padding-bottom: 0px;
+            font-size: 60px;
+            color: #552d87;
+        }
+
+        .circlePic {
+            background-color: #f0f0f0;
+            border-radius: 100px;
+            padding-top: 0px;
+            margin-top: 30px;
+            border-style: double;
+            border-color: rgba(1, 130, 172, 1);
+            border-width: 4px;
+            margin-bottom: 25px;
+            height: 200px;
+            width: 200px;
+        }
+
+        .circleText {
+            color: #552d87;
+            font-size: 24px;
+        }
+
+        #icon1 {
+            width: 100px;
+            margin-top: 60px;
+            height: auto;
+        }
+
+        #icon2 {
+            width: 70px;
+            margin-top: 50px;
+            height: auto;
+            ;
+        }
+
+        #icon3 {
+            width: 100px;
+            margin-left: 5px;
+            margin-top: 70px;
+            height: auto;
+        }
+
+        .secondText {
+            width: 70%;
+            padding: 50px;
+            font-family: 'Segoe ui';
+            padding-top: 25px;
+            font-size: 24px;
+            color: #F0F0F0;
+        }
+
+        .secondHeader {
+            width: 100%;
+            padding: 50px;
+            font-family: 'segoe ui light';
+            padding-bottom: 0px;
+            font-size: 24px;
+            font-size: 60px;
+            color: #F0F0F0;
+        }
+
+
+        @media only screen and (max-width: 500px) {
+
+            #icon1 {
+                width: 50px;
+                margin-top: 30px;
+            }
+
+            #footerCSS {
+                font-size: 10px;
+            }
+
+            #icon2 {
+                width: 35px;
+                margin-top: 25px;
+                height: auto;
+                ;
+            }
+
+            #icon3 {
+                width: 50px;
+                margin-left: 2.5px;
+                margin-top: 35px;
+                height: auto;
+            }
+
+            .title {
+                width: 100%;
+                font-size: 24px;
+            }
+
+            .circlePic {
+                width: 100px;
+                height: 100px;
+            }
+
+            .circleText {
+                font-size: 12px;
+            }
+
+            .secondText {
+                font-size: 12px;
+                width: 100%;
+            }
+
+            .secondHeader {
+                font-size: 24px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Wiring With Women</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Events</a></li>
+                    <li><a href="People.html">People</a></li>
+                    <li><a href="about.html">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <img src="duke2.png" style="width: 100%; border-bottom-style: groove; border-bottom-color: rgba(1, 130, 172, 1); border-bottom-width: 5px; height: auto" />       
+    </div>
+    <div id="footerCSS" valign="middle" align="right"><div style="margin-right: 30px"><strong>Wiring With Women in Association with Duke University</strong></div></div>
+</body>
+</html>
