@@ -41,7 +41,7 @@
             background-color: #f0f0f0; 
             margin-top: -20px; 
             text-align: center; 
-            height:1000px;  
+            height:1200px;  
         }
 
         #pageTitle{
@@ -170,9 +170,7 @@
             #tableTitle{
                 font-size: 28px; 
             }
-            #connect{
-                display: none; 
-            }
+           
             #bottomBox{
                 display: table; 
                 padding: 50px;  
@@ -190,15 +188,13 @@
             #mainContainer{
                 padding: 50px; 
             }
-            #connect{
-                display: none; 
-            }
+           
             #commentBox{
                 width: 400px; 
                 height: 150px;
             }
             #tableTitle{
-                font-size: 20px; 
+                font-size: 28px; 
             }
             #pageTitle{
                 font-size: 40px; 
@@ -207,6 +203,9 @@
                 display: table; 
                 padding: 50px;  
             }
+             #tableText{
+                    padding-top: 50px; 
+                }
         }
         @media only screen and (max-width: 970px) and (min-width: 750px){
 
@@ -215,10 +214,7 @@
                    border-width: 2px;
                    padding-top: 3px;  
                 }
-                #connect{
-                    display: none; 
-                }
-
+               
                 #mainPage{
                     width: 90%; 
                     margin-left: 5%;
@@ -247,6 +243,9 @@
                 display: table; 
                 padding: 50px;  
             }
+                #tableText{
+                    padding-top: 50px; 
+                }
 
         
             }
@@ -264,9 +263,7 @@
                     margin-left: 0%;
                      
                 }
-                #connect{
-                    display: none; 
-                }
+               
                 #footerCSS {
                     font-size: 12px;
                 }
@@ -277,11 +274,14 @@
 
                 }
                 #commentBox{
-                    width: 350px; 
-                    height: 150px; 
+                    width: 300px; 
+                    height: 100px; 
                 }
                 #tableTitle{
                     font-size: 24px; 
+                }
+                #tableText{
+                    padding-top: 50px; 
                 }
                 #bottomBox{
                 display: table; 
@@ -326,10 +326,27 @@
         <div id="pageTitle">Contact Us</div>
         <div id="subPage" valign="middle" align="right"></div>
         <div class="container-fluid" id="pageTableContact" align="center">
-           
-            <div class="row" >
-                <div class="col-lg-6" valign="top" align="left" id="tableText">
-                    <div id="tableTitle">Questions? Send us an Email!</div><br />
+            
+
+            <div class="row" align="left" >
+                <div class="col-xs-12 col-lg-6" valign="middle" id="connect" align="left">
+                    <div class="container" align="left" style="border-style: ridge; border-width: 15px; min-width: 400px; max-width: 400px; padding-top: 30px; word-wrap: break-word; padding-left: 10px; padding-right: 50px;  border-color:#552d87">
+                        <div style="font-size: 32px; padding-left: 20px; ">Connect With Us!</div><br />
+                        <div style="font-size: 18px; text-align: left; padding-left: 20px ">
+                            <img src="FB-FindUsonFacebook-online-144.png" style="padding-left: 5px; cursor: pointer" onclick="location.href='https://www.facebook.com/groups/744561652317777/'" />
+                            <br /><br /> <div id="contactText"><strong>Location: </strong><br />Duke University</div>
+
+                            <div id="contactText"><strong>Email: </strong><br />  dukedubcubed@gmail.com</div>
+
+                            <div style="margin-top: 25px; margin-left: 6px">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 col-lg-6" valign="top" align="left" id="tableText">
+                    <div align="center" id="tableTitle">Questions? Send us an Email!</div><br />
                     <form action="MAILTO:dukedubcubed@gmail.com" method="post" enctype="text/plain">
                         Name:<br>
                         <input type="text" id="input1" name="name" value=""><br><br />
@@ -342,40 +359,7 @@
 
                     </form>
                 </div>
-                <div class="col-lg-6" valign="middle" id="connect" align="left" style="padding-top: 50px">
-                    <div class="container"  style="border-style: ridge; border-width: 15px; min-width: 400px; max-width: 400px; padding-top: 30px; word-wrap: break-word; padding-left: 10px; padding-right: 50px;  border-color:#552d87" >
-                        <div style="font-size: 32px; padding-left: 20px; ">Connect With Us!</div><br />
-                        <div style="font-size: 18px; text-align: left; padding-left: 20px ">
-                            <img src="FB-FindUsonFacebook-online-144.png" style="padding-left: 5px; cursor: pointer" onclick="location.href='https://www.facebook.com/groups/744561652317777/'" />
-                            <br /><br /> <div id="contactText"><strong>Location: </strong><br />Duke University</div>
-                          
-                            <div id="contactText"><strong>Email: </strong><br />  dukedubcubed@gmail.com</div>
-
-                            <div style="margin-top: 25px; margin-left: 6px">
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div id="bottomBox" >
-                <div class="row" align="center">
-                    <div class="col-xs-12" align="center">
-                        <img src="FB-FindUsonFacebook-online-144.png" style="padding-top: 3px;  padding: 3px; cursor: pointer" onclick="location.href='https://www.facebook.com/groups/744561652317777/'" />
-                    </div>
-                </div>
-                <div class="row" align="left">
-                    <div class="col-xs-12" align="center">
-                        <div id="contactText"><strong>Location: </strong> Duke University</div>
-                    </div>
-                </div>
-
-                <div class="row" align="left">
-                    <div class="col-xs-12" align="center">
-                        <div id="contactText"><strong>Email: </strong>dukedubcubed@gmail.com</div>
-                    </div>
-                </div>
+                
             </div>
             
         </div>
