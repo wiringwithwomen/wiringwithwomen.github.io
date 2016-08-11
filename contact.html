@@ -14,20 +14,10 @@
         <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
         <style>
          
-         body{
+        body{
             background: linear-gradient(rgba(1, 130, 172, 1), #f0f0f0 ); 
         }
-         #navBar{
-            position: absolute; 
-            top: 0px; 
-            border-style: none; 
-            border-bottom-style: groove; 
-            border-color: rgba(1, 130, 172, 1);
-            border-width: 5px; 
-            background-color: #413f4d;
-            box-shadow: 2px 2px 20px 2px #413f4d; 
-            width: 100%; 
-        }
+         
         #myNavbar{
             margin-right: 30px
         }
@@ -51,7 +41,7 @@
             background-color: #f0f0f0; 
             margin-top: -20px; 
             text-align: center; 
-            height: 1500px;
+            height:1000px;  
         }
 
         #pageTitle{
@@ -64,27 +54,29 @@
             text-shadow: 1px 0px 1px 1px black;
         }
 
-        #subPage{
+         #subPage{
             background-color: rgba(1, 130, 172, 1); 
-            border-width: 5px; 
+            border-width: 5px;
+            width: 80%;  
             height: 5px; 
-            width: 60%; 
-            margin-left: 20%; 
             color: white; 
-            font-family: 'Segoe UI Light';  
-            font-size: 20px; 
-            padding-top: 7px;
+            padding-top: 5px;
+            margin-left: 10%; 
         }
 
+       
         #footerCSS{
             background-color: rgba(1, 130, 172, 1); 
             border-width: 5px; 
-            height: 50px; 
+            height: auto; 
+            padding-top: 12px; 
+            padding-bottom: 10px; 
             width: 100%; 
             color: white; 
             font-family: 'Segoe UI Light';  
             font-size: 20px; 
             padding-top: 7px;
+            
         }
         #input1{
             border-color:rgba(1,130, 172, 1); 
@@ -95,7 +87,9 @@
         .navbar-default .navbar-right > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
             color:#f0f0f0;
         }
-
+        #bottomBox{
+            border: 2px ridge gray; display: none; margin-top: 100px; 
+        }
         #inputButton{
             padding: 5px; 
             padding-right: 10px; 
@@ -115,39 +109,45 @@
             font-family: 'Segoe UI light'
         }
 
-         .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-                border-color: rgba(1, 130, 172, 1);
-            }
+        .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+            border-color: rgba(1, 130, 172, 1);
+        }
 
-           .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
-                color: #f0f0f0; 
-            }
-            .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
-                background-color: #f0f0f0; 
-            }
-            .navbar-default .navbar-nav > li > a{
-                color: #bdbdbd;
-            }
+        .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+            color: #f0f0f0; 
+        }
+        .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+            background-color: #f0f0f0; 
+        }
+        .navbar-default .navbar-nav > li > a{
+            color: #bdbdbd;
+        }
 
         #pageTableContact{
-            margin-top: 50px; 
-            width: 80%; 
-            margin-left: 10%;
+            padding-top: 50px; 
+            padding-right: 5%;
+            padding-left: 10%; 
+            
         }
+
         #commentBox{
-            height: 300px; 
-            width: 500px; 
+            height: 150px; 
+            width: 450px; 
             border-color: rgba(1,130, 172, 1); 
             border-style: ridge; 
             border-width: 3px; 
             background-color: rgba(240, 240, 240, .3)
         }
-         #horizSection{
-               background-color: rgba(1, 130, 172, 1); border-width: 5px; height: 5px; width: 80%; margin-left: 10%; color: white; font-family: 'Segoe UI Light';  font-size: 20px; padding-top: 7px;
-            }
-            #pageTitle{
-               font-size: 60px; font-family: 'Segoe ui light'; padding: 50px; text-align: center; padding-bottom: 10px;  color: #552d87; letter-spacing: 3px; text-shadow: 1px 0px 1px 1px black;
-            }
+       
+        #pageTitle{
+            font-size: 60px; 
+            font-family: 'Segoe UI light'; 
+            padding: 50px;
+            padding-bottom: 10px;  
+            color: #552d87; 
+            letter-spacing: 3px;  
+            text-shadow: 1px 0px 1px 1px black;
+        }
 
         #tableText{
             color: black; font-size: 20px; font-family: 'Segoe UI light';
@@ -156,75 +156,145 @@
             font-size: 32px;
         }
         #connect{
-            color: black;  width: 500px; font-size: 20px; padding-left: 50px; padding-right: 25px; font-family: 'Segoe UI light';display: normal;
+            display: normal;
         }
+        #bottomBox{
+            display: none; 
+        }
+
+        @media only screen and (min-width: 1170px) and (max-width: 1400px) {
+            #commentBox{
+                width: 400px; 
+                height: 150px;
+            }
+            #tableTitle{
+                font-size: 28px; 
+            }
+            #connect{
+                display: none; 
+            }
+            #bottomBox{
+                display: table; 
+                padding: 50px;  
+            }
+        }
+
+        @media only screen and (max-width: 1170px) and (min-width: 970px) {
+
+            #subPage{
+                height: 2px; 
+                border-width: 2px;
+                padding-top: 4px;  
+            }
+
+            #mainContainer{
+                padding: 50px; 
+            }
+            #connect{
+                display: none; 
+            }
+            #commentBox{
+                width: 400px; 
+                height: 150px;
+            }
+            #tableTitle{
+                font-size: 20px; 
+            }
+            #pageTitle{
+                font-size: 40px; 
+            }
+            #bottomBox{
+                display: table; 
+                padding: 50px;  
+            }
+        }
+        @media only screen and (max-width: 970px) and (min-width: 750px){
+
+                #subPage{
+                   height: 2px; 
+                   border-width: 2px;
+                   padding-top: 3px;  
+                }
+                #connect{
+                    display: none; 
+                }
+
+                #mainPage{
+                    width: 90%; 
+                    margin-left: 5%;
+                    margin-right: 5%; 
+                   
+                }
+                #footerCSS {
+                    font-size: 14px;
+                }
+
+                #tableTitle {
+                    width: 100%;
+                    font-size: 24px;
+
+                }
+                #pageTitle {
+                    width: 100%;
+                    font-size: 40px;
+
+                }
+                #commentBox{
+                    width: 400px; 
+                    height: 150px;
+                }
+               #bottomBox{
+                display: table; 
+                padding: 50px;  
+            }
+
         
-        @media only screen and (max-width: 1400px) and (min-width: 750px){
+            }
 
+            @media only screen and (max-width: 750px) {
 
+               #subPage{
+                   height: 2px; 
+                   border-width: 2px;
+                   padding-top: 0px;  
+               }
+
+                #mainPage{
+                    width: 100%; 
+                    margin-left: 0%;
+                     
+                }
+                #connect{
+                    display: none; 
+                }
                 #footerCSS {
                     font-size: 12px;
                 }
-                #tableTitle{
-                    font-size: 28px;
-                }
-                #subTitle{
-                    font-size: 24px; 
-                    
-                }
 
                 #pageTitle {
                     width: 100%;
-                    font-size: 40px;
-                }
-                .calendar{
-                    padding-left: 2%; 
-                    width: 80%; 
-                    padding-right: 2%; 
-                }
-
-                #commentBox{
-                    width: 500px; 
-                }
-                #connect{
-                    display: none; 
-                }
-  
-                  
-            }
-            @media only screen and (max-width: 750px) {
-
-                #commentBox{
-                    width: 300px; 
-                    height: 200px;
-                    padding-right: 50px; 
-                }
-
-                #footerCSS {
-                    font-size: 10px;
-                }
-                #tableTitle{
                     font-size: 24px;
-                }
 
-                 #subTitle{
+                }
+                #commentBox{
+                    width: 350px; 
+                    height: 150px; 
+                }
+                #tableTitle{
                     font-size: 24px; 
-                    
                 }
-
-                #pageTitle {
-                    width: 100%;
-                    font-size: 40px;
-                }
-                .calendar{
-                    padding-left: 2%; 
-                    width: 80%; 
-                    padding-right: 2%; 
-                }
-                #connect{
-                    display: none; 
-                }
+                #bottomBox{
+                display: table; 
+                padding: 50px;  
             }
+                
+
+              
+            }
+        
+    
+            
+            
     </style>
 
 </head>
@@ -254,11 +324,12 @@
 
     <div id="mainPage">
         <div id="pageTitle">Contact Us</div>
-        <div id="horizSection" valign="middle" align="right"></div>
-        <table align="left" id="pageTableContact" style="width: 80%;"class="table-responsive">
-            <tr style="width: 60%">
-                <td valign="top" align="left" id="tableText">
-                    <h1 id="tableTitle">Questions? Send us an Email!</h1><br />
+        <div id="subPage" valign="middle" align="right"></div>
+        <div class="container-fluid" id="pageTableContact" align="center">
+           
+            <div class="row" >
+                <div class="col-lg-6" valign="top" align="left" id="tableText">
+                    <div id="tableTitle">Questions? Send us an Email!</div><br />
                     <form action="MAILTO:dukedubcubed@gmail.com" method="post" enctype="text/plain">
                         Name:<br>
                         <input type="text" id="input1" name="name" value=""><br><br />
@@ -270,17 +341,15 @@
                         <input id="inputButton" type="reset" value="Reset">
 
                     </form>
-                </td>
-                <td valign="middle" id="connect" align="left" style="width: 48%; padding-left: 50px; ">
-                    <div align="left"style="border-style: ridge; border-width: 20px; width: 100%; padding: 20px; padding-top: 30px; padding-left: 10px;  border-color:#552d87" >
-
-                        <div align="left" style="font-size: 32px; padding-left: 20px; ">Connect With Us!</div><br />
-
+                </div>
+                <div class="col-lg-6" valign="middle" id="connect" align="left" style="padding-top: 50px">
+                    <div class="container"  style="border-style: ridge; border-width: 15px; min-width: 400px; max-width: 400px; padding-top: 30px; word-wrap: break-word; padding-left: 10px; padding-right: 50px;  border-color:#552d87" >
+                        <div style="font-size: 32px; padding-left: 20px; ">Connect With Us!</div><br />
                         <div style="font-size: 18px; text-align: left; padding-left: 20px ">
-                            <img src="FB-FindUsonFacebook-online-144.png" style="padding-left: 5px;cursor: pointer" onclick="location.href='https://www.facebook.com/groups/744561652317777/'" />
-                            <h2 id="contactText">Location: Duke University</h2>
+                            <img src="FB-FindUsonFacebook-online-144.png" style="padding-left: 5px; cursor: pointer" onclick="location.href='https://www.facebook.com/groups/744561652317777/'" />
+                            <br /><br /> <div id="contactText"><strong>Location: </strong><br />Duke University</div>
                           
-                            <h2 id="contactText"><strong>Email: </strong><br />  dukedubcubed@gmail.com</h2>
+                            <div id="contactText"><strong>Email: </strong><br />  dukedubcubed@gmail.com</div>
 
                             <div style="margin-top: 25px; margin-left: 6px">
 
@@ -288,11 +357,30 @@
                         </div>
                     </div>
 
-                </td>
-            </tr>
-        </table>
-    </div>
+                </div>
+            </div>
+            <div id="bottomBox" >
+                <div class="row" align="center">
+                    <div class="col-xs-12" align="center">
+                        <img src="FB-FindUsonFacebook-online-144.png" style="padding-top: 3px;  padding: 3px; cursor: pointer" onclick="location.href='https://www.facebook.com/groups/744561652317777/'" />
+                    </div>
+                </div>
+                <div class="row" align="left">
+                    <div class="col-xs-12" align="center">
+                        <div id="contactText"><strong>Location: </strong> Duke University</div>
+                    </div>
+                </div>
 
+                <div class="row" align="left">
+                    <div class="col-xs-12" align="center">
+                        <div id="contactText"><strong>Email: </strong>dukedubcubed@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
     <div id="footerCSS" valign="middle" align="right"><div style="margin-right: 30px">Wiring With Women in Association with Duke University</div></div>
+
 </body>
 </html>

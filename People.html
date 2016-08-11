@@ -44,7 +44,7 @@
         }
 
         #mainPage{
-            width: auto;
+            width: 80%;
             padding-bottom: 50px; 
             margin-left: 10%;
             background-color: #f0f0f0; 
@@ -66,14 +66,14 @@
 
         #subPage{
             background-color: rgba(1, 130, 172, 1); 
-            border-width: 5px; 
+            border-width: 5px;
+            width: 80%;  
             height: 5px; 
-            width: 80%; 
-            margin-left: 10%; 
             color: white; 
-            font-family: 'Segoe UI Light';  
-            font-size: 20px; 
-            padding-top: 7px;
+            
+
+            padding-top: 5px;
+            margin-left: 10%; 
         }
 
        #pageTable{
@@ -148,7 +148,12 @@
         }
         @media only screen and (max-width: 1170px) and (min-width: 970px) {
 
-             
+             #subPage{
+                   height: 2px; 
+                   border-width: 2px;
+                   padding-top: 4px;  
+               }
+
               #mainContainer{
                   padding: 50px; 
               }
@@ -165,10 +170,16 @@
                   font-size: 14px; 
               }
 
+
         }
         @media only screen and (max-width: 970px) and (min-width: 750px){
 
-                
+                #subPage{
+                   height: 2px; 
+                   border-width: 2px;
+                   padding-top: 3px;  
+               }
+
                 #mainPage{
                     width: 90%; 
                     margin-left: 5%;
@@ -199,17 +210,6 @@
                     border-width: 10px;
                 }
 
-                #pageTable {
-                    margin-right: 5%;
-                    margin-left: 5%;
-                }
-
-                 #pageTable td {
-                        padding-top: 25px;
-                        padding-right: 12px;
-                        width: auto;
-                        max-width: 20%;
-                    }
                 #mainContainer{
                   padding: 50px; 
                 }
@@ -217,15 +217,24 @@
 
             @media only screen and (max-width: 750px) {
 
-               
+               #subPage{
+                   height: 2px; 
+                   border-width: 2px;
+                   padding-top: 0px;  
+               }
+
                 #mainContainer{
-                    padding: 50px; 
+                    
+                    padding: 10px; 
+                    padding-top: 50px; 
                  }
+
                 #mainPage{
                     width: 100%; 
                     margin-left: 0%;
                     height: auto; 
                 }
+
                 #footerCSS {
                     font-size: 12px;
                 }
@@ -250,17 +259,7 @@
                     border-width: 10px;
                 }
 
-                #pageTable {
-                    margin-right: 5%;
-                    margin-left: 5%;
-                }
-
-                 #pageTable td {
-                        padding-top: 25px;
-                        padding-right: 12px;
-                        width: auto;
-                        max-width: 20%;
-                    }
+              
             }
             
 
