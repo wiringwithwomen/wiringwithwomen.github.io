@@ -42,7 +42,7 @@
             background-color: #f0f0f0; 
             margin-top: -20px; 
             text-align: center; 
-            height: 1200px; 
+            height: 1000px; 
         }
 
         #pageTitle{
@@ -425,8 +425,7 @@
     <div id="footerCSS" valign="middle" align="right"><div style="margin-right: 30px">Wiring With Women in Association with Duke University</div></div>
     <script>
         var width = $(window).width();
-        var height = $(window).height();
-        $("#mainPage").height(height); 
+       
         if (width < 750) {
             $("#facebookSmall").show();
             $("#facebookLarge").hide();
@@ -438,8 +437,7 @@
 
         $(window).resize(function()
         {
-            var height = $(window).height();
-            $("#mainPage").height(height);
+            
             var width = $(window).width();
             if (width < 750) {
                 $("#facebookSmall").show();
