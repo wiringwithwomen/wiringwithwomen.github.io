@@ -77,6 +77,16 @@
             font-family: 'Segoe UI Light';  
             font-size: 20px; 
             padding-top: 7px;
+
+            
+            border-width: 5px; 
+           
+            width: 100%; 
+            
+            font-family: 'Segoe UI Light';  
+            font-size: 20px; 
+            padding: 10px;
+            padding-bottom: 15px; 
             
         }
         #input1{
@@ -95,7 +105,7 @@
             padding: 5px; 
             padding-right: 10px; 
             padding-left: 10px;  
-            font-size: 24px; 
+            font-size: 16px; 
             margin-right: 10px;   
             border-style: none; 
             background-color: rgba(85, 45, 135, 1); 
@@ -164,6 +174,10 @@
         #bottomBox{
             display: none; 
         }
+        #facebookLarge{
+            display: normal; 
+        }
+      
 
         @media only screen and (min-width: 1170px) and (max-width: 1400px) {
             
@@ -175,6 +189,12 @@
                 display: table; 
                 padding: 50px;  
             }
+             #facebookSmall{
+                  display: none; 
+              }
+              #facebookLarge{
+                    display: normal;   
+                }
         }
 
         @media only screen and (max-width: 1170px) and (min-width: 970px) {
@@ -202,6 +222,12 @@
             }
              #tableText{
                     padding-top: 50px; 
+                }
+              #facebookSmall{
+                  display: none; 
+              }
+              #facebookLarge{
+                    display: normal;   
                 }
         }
         @media only screen and (max-width: 970px) and (min-width: 750px){
@@ -236,9 +262,15 @@
                #bottomBox{
                 display: table; 
                 padding: 50px;  
-            }
+                }
                 #tableText{
                     padding-top: 50px; 
+                }
+                 #facebookSmall{
+                    display: none; 
+                }
+                #facebookLarge{
+                    display: normal;   
                 }
 
         
@@ -255,6 +287,10 @@
                 #mainPage {
                     width: 100%;
                     margin-left: 0%;
+                }
+                
+                #inputButton{
+                    font-size: 12px; 
                 }
 
                 #footerCSS {
@@ -284,6 +320,15 @@
                     display: table;
                     padding: 50px;
                 }
+                #contactText{
+                  font-size: 14px; 
+              }
+                #facebookSmall{
+                    display: normal;   
+                }
+                #facebookLarge{
+                    display: none;   
+                }
             }
                 
            @media only screen and (max-width: 600px) {
@@ -292,6 +337,18 @@
                      height: 100px; 
                      width: 275px; 
                }
+              #inputButton{
+                  font-size: 12px; 
+              }
+              #contactText{
+                  font-size: 12px; 
+              }
+              #facebookSmall{
+                  display: normal; 
+              }
+              #facebookLarge{
+                    display: none;   
+                }
             }
         
     
@@ -347,9 +404,10 @@
 
          
             <div class="col-xs-12 col-md-12 col-lg-5 col-lg-offset-0">
-                <div align="center" style="border-style: ridge; margin-top: 100px; border-width: 15px; padding-top: 30px; word-wrap: break-word;  padding-right: 50px;  border-color:#552d87">
+                <div align="center" style="margin-top: 100px; word-wrap: break-word;  padding-right: 50px;">
 
-                    <img src="FB-FindUsonFacebook-online-144.png" style="padding-left: 5px; padding-bottom: 5px; cursor: pointer" onclick="location.href='https://www.facebook.com/groups/744561652317777/'" />
+                    <img src="FB-FindUsonFacebook-online-144.png" id="facebookLarge"style="padding-left: 5px; padding-bottom: 5px; cursor: pointer" onclick="location.href='https://www.facebook.com/groups/744561652317777/'" />
+                    <img src="FB-FindUsonFacebook-online-100.png" id="facebookSmall" style="display: normal; padding-left: 5px; padding-bottom: 5px; cursor: pointer" onclick="location.href='https://www.facebook.com/groups/744561652317777/'" />
 
                     <div id="contactText">Email: dukedubcubed@gmail.com</div>
 
@@ -365,6 +423,37 @@
         </div>
   
     <div id="footerCSS" valign="middle" align="right"><div style="margin-right: 30px">Wiring With Women in Association with Duke University</div></div>
+    <script>
+        var width = $(window).width();
+        var height = $(window).height();
+        $("#mainPage").height(height); 
+        if (width < 750) {
+            $("#facebookSmall").show();
+            $("#facebookLarge").hide();
+        }
+        else{
+            $("#facebookSmall").hide();
+            $("#facebookLarge").show();
+        }
 
+        $(window).resize(function()
+        {
+            var height = $(window).height();
+            $("#mainPage").height(height);
+            var width = $(window).width();
+            if (width < 750) {
+                $("#facebookSmall").show();
+                $("#facebookLarge").hide();
+            }
+            else {
+                $("#facebookSmall").hide();
+                $("#facebookLarge").show();
+            }
+
+        });
+        
+
+    </script>
 </body>
+
 </html>
