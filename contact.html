@@ -16,6 +16,7 @@
          
         body{
             background: linear-gradient(rgba(1, 130, 172, 1), #f0f0f0 ); 
+
         }
          
         #myNavbar{
@@ -41,7 +42,7 @@
             background-color: #f0f0f0; 
             margin-top: -20px; 
             text-align: center; 
-            height:1200px;  
+            height: 1200px; 
         }
 
         #pageTitle{
@@ -131,11 +132,12 @@
         }
 
         #commentBox{
-            height: 150px; 
-            width: 450px; 
+            
             border-color: rgba(1,130, 172, 1); 
             border-style: ridge; 
             border-width: 3px; 
+            height: 150px; 
+            width:500px; 
             background-color: rgba(240, 240, 240, .3)
         }
        
@@ -154,6 +156,7 @@
         }
         #tableTitle{
             font-size: 32px;
+            padding-bottom: 30px; 
         }
         #connect{
             display: normal;
@@ -163,10 +166,7 @@
         }
 
         @media only screen and (min-width: 1170px) and (max-width: 1400px) {
-            #commentBox{
-                width: 400px; 
-                height: 150px;
-            }
+            
             #tableTitle{
                 font-size: 28px; 
             }
@@ -189,10 +189,7 @@
                 padding: 50px; 
             }
            
-            #commentBox{
-                width: 400px; 
-                height: 150px;
-            }
+            
             #tableTitle{
                 font-size: 28px; 
             }
@@ -235,10 +232,7 @@
                     font-size: 40px;
 
                 }
-                #commentBox{
-                    width: 400px; 
-                    height: 150px;
-                }
+                
                #bottomBox{
                 display: table; 
                 padding: 50px;  
@@ -252,18 +246,17 @@
 
             @media only screen and (max-width: 750px) {
 
-               #subPage{
-                   height: 2px; 
-                   border-width: 2px;
-                   padding-top: 0px;  
-               }
-
-                #mainPage{
-                    width: 100%; 
-                    margin-left: 0%;
-                     
+                #subPage {
+                    height: 2px;
+                    border-width: 2px;
+                    padding-top: 0px;
                 }
-               
+
+                #mainPage {
+                    width: 100%;
+                    margin-left: 0%;
+                }
+
                 #footerCSS {
                     font-size: 12px;
                 }
@@ -271,25 +264,34 @@
                 #pageTitle {
                     width: 100%;
                     font-size: 24px;
+                }
 
+               
+                #input1 {
+                    width: 200px;
+                    height: auto;
                 }
-                #commentBox{
-                    width: 300px; 
-                    height: 100px; 
+
+                #tableTitle {
+                    font-size: 24px;
                 }
-                #tableTitle{
-                    font-size: 24px; 
+
+                #tableText {
+                    padding-top: 50px;
                 }
-                #tableText{
-                    padding-top: 50px; 
+
+                #bottomBox {
+                    display: table;
+                    padding: 50px;
                 }
-                #bottomBox{
-                display: table; 
-                padding: 50px;  
             }
                 
+           @media only screen and (max-width: 600px) {
 
-              
+              #commentBox{
+                     height: 100px; 
+                     width: 275px; 
+               }
             }
         
     
@@ -325,45 +327,43 @@
     <div id="mainPage">
         <div id="pageTitle">Contact Us</div>
         <div id="subPage" valign="middle" align="right"></div>
-        <div class="container-fluid" id="pageTableContact" align="center">
-            
-
-            <div class="row" align="left" >
-                <div class="col-xs-12 col-lg-6" valign="middle" id="connect" align="left">
-                    <div class="container" align="left" style="border-style: ridge; border-width: 15px; min-width: 400px; max-width: 400px; padding-top: 30px; word-wrap: break-word; padding-left: 10px; padding-right: 50px;  border-color:#552d87">
-                        <div style="font-size: 32px; padding-left: 20px; ">Connect With Us!</div><br />
-                        <div style="font-size: 18px; text-align: left; padding-left: 20px ">
-                            <img src="FB-FindUsonFacebook-online-144.png" style="padding-left: 5px; cursor: pointer" onclick="location.href='https://www.facebook.com/groups/744561652317777/'" />
-                            <br /><br /> <div id="contactText"><strong>Location: </strong><br />Duke University</div>
-
-                            <div id="contactText"><strong>Email: </strong><br />  dukedubcubed@gmail.com</div>
-
-                            <div style="margin-top: 25px; margin-left: 6px">
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-xs-12 col-lg-6" valign="top" align="left" id="tableText">
-                    <div align="center" id="tableTitle">Questions? Send us an Email!</div><br />
+       
+        <div class="container-fluid" id="pageTableContact">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-7" valign="top" align="left">
+                    <div id="tableTitle">Questions? Send us an Email!</div>
                     <form action="MAILTO:dukedubcubed@gmail.com" method="post" enctype="text/plain">
                         Name:<br>
                         <input type="text" id="input1" name="name" value=""><br><br />
                         E-mail:<br>
                         <input type="text" id="input1" name="mail" value=""><br><br />
                         Comment:<br>
-                        <input id="commentBox" type="text" name="comment" value="" size="50"><br><br>
+                        <input id="commentBox" type="text" name="comment" value=""><br><br>
                         <input id="inputButton" type="submit" value="Send">
                         <input id="inputButton" type="reset" value="Reset">
 
                     </form>
                 </div>
-                
+
+         
+            <div class="col-xs-12 col-md-12 col-lg-5 col-lg-offset-0">
+                <div align="center" style="border-style: ridge; margin-top: 100px; border-width: 15px; padding-top: 30px; word-wrap: break-word;  padding-right: 50px;  border-color:#552d87">
+
+                    <img src="FB-FindUsonFacebook-online-144.png" style="padding-left: 5px; padding-bottom: 5px; cursor: pointer" onclick="location.href='https://www.facebook.com/groups/744561652317777/'" />
+
+                    <div id="contactText">Email: dukedubcubed@gmail.com</div>
+
+                    <div style="margin-top: 25px; margin-left: 6px">
+
+                    </div>
+                </div>
             </div>
-            
+           
+
         </div>
-    </div>
+            </div> 
+        </div>
+  
     <div id="footerCSS" valign="middle" align="right"><div style="margin-right: 30px">Wiring With Women in Association with Duke University</div></div>
 
 </body>
