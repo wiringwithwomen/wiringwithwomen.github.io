@@ -78,27 +78,31 @@
             }
 
             #subPage{
-                background-color: rgba(1, 130, 172, 1); 
-                border-width: 5px; 
-                height: 5px; 
-                width: 60%; 
-                margin-left: 20%; 
-                color: white; 
-                font-family: 'Segoe UI Light';  
-                font-size: 20px; 
-                padding-top: 7px;
-            }
+            background-color: rgba(1, 130, 172, 1); 
+            border-width: 5px;
+            width: 80%;  
+            height: 5px; 
+            color: white; 
+            padding-top: 5px;
+            margin-left: 10%; 
+        }
+        #footerCSS{
+            background-color: rgba(1, 130, 172, 1); 
+            color: white; 
+            border-width: 5px; 
+            height: auto; 
+      
+            width: 100%; 
+            
+            font-family: 'Segoe UI Light';  
+            font-size: 20px; 
+            
 
-            #footerCSS{
-                background-color: rgba(1, 130, 172, 1); 
-                border-width: 5px; 
-                height: 50px; 
-                width: 100%; 
-                color: white; 
-                font-family: 'Segoe UI Light';  
-                font-size: 20px; 
-                padding-top: 7px;
-            }
+            padding: .5%; 
+            padding-right: 2%; 
+            border-width: 5px; 
+            
+        }
             #horizSection{
                background-color: rgba(1, 130, 172, 1); border-width: 5px; height: 5px; width: 80%; margin-left: 10%; color: white; font-family: 'Segoe UI Light';  font-size: 20px; padding-top: 7px;
             }
@@ -108,6 +112,9 @@
 
             #subTitle{
                 font-family: 'Segoe ui light'; font-size: 24px; padding-top: 100px; margin-left: 10%; padding-left: 0px;  padding-bottom: 50px; color: black;
+            }
+            #eventList{
+                font-family: 'Segoe ui'; font-size: 18px; padding-top: 30px; margin-left: 10%; padding-left: 5%;  padding-bottom: 50px; color: black;
             }
 
             .calendar{
@@ -119,7 +126,41 @@
                  position: absolute;
             }
 
-            @media only screen and (max-width: 1400px) and (min-width: 750px){
+            @media only screen and (max-width: 1170px) and (min-width: 970px) {
+
+            #subPage{
+                height: 2px; 
+                border-width: 2px;
+                padding-top: 4px;  
+            }
+
+            #mainContainer{
+                padding: 50px; 
+            }
+           
+            
+            #tableTitle{
+                font-size: 28px; 
+            }
+            #pageTitle{
+                font-size: 40px; 
+            }
+            #bottomBox{
+                display: table; 
+                padding: 50px;  
+            }
+             #tableText{
+                    padding-top: 50px; 
+                }
+              #facebookSmall{
+                  display: none; 
+              }
+              #facebookLarge{
+                    display: normal;   
+                }
+        }
+
+            @media only screen and (max-width: 1400px) and (min-width: 1170px){
 
 
                 #footerCSS {
@@ -144,16 +185,68 @@
   
                   
             }
+
+             @media only screen and (max-width: 970px) and (min-width: 750px){
+
+                #subPage{
+                   height: 2px; 
+                   border-width: 2px;
+                   padding-top: 3px;  
+                }
+               
+                #mainPage{
+                    width: 90%; 
+                    margin-left: 5%;
+                    margin-right: 5%; 
+                   
+                }
+                #footerCSS {
+                    font-size: 14px;
+                    
+                }
+
+                #tableTitle {
+                    width: 100%;
+                    font-size: 24px;
+
+                }
+                #pageTitle {
+                    width: 100%;
+                    font-size: 40px;
+
+                }
+                
+               #bottomBox{
+                display: table; 
+                padding: 50px;  
+                }
+                #tableText{
+                    padding-top: 50px; 
+                }
+                 #facebookSmall{
+                    display: none; 
+                }
+                #facebookLarge{
+                    display: normal;   
+                }
+
+        
+            }
             @media only screen and (max-width: 750px) {
 
 
                 #footerCSS {
-                    font-size: 10px;
+                    font-size: 12px;
                 }
 
                  #subTitle{
                     font-size: 24px; 
                     
+                }
+                     #subPage {
+                    height: 2px;
+                    border-width: 2px;
+                    padding-top: 0px;
                 }
 
                 #pageTitle {
@@ -164,6 +257,10 @@
                     padding-left: 2%; 
                     width: 80%; 
                     padding-right: 2%; 
+                }
+                 #pageTitle {
+                    width: 100%;
+                    font-size: 24px;
                 }
             }
 
@@ -198,12 +295,45 @@
         <div id="pageTitle">Upcoming Events</div>
         <div id="horizSection" valign="middle" align="right"></div>
         <div  align="left" id="subTitle">Event Calendar:</div>
+        <ul id="eventList">
+            <li class="eventItem">There are currently no upcoming events</li>
+        </ul>
        
-        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23F0F0F0&amp;src=225ao6t10sian4lujebq5903lg%40group.calendar.google.com&amp;color=%230182ac&amp;ctz=America%2FLos_Angeles" 
+       
+        <iframe id="cal" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23F0F0F0&amp;src=225ao6t10sian4lujebq5903lg%40group.calendar.google.com&amp;color=%230182ac&amp;ctz=America%2FLos_Angeles" 
                 class="calendar" height="1000" frameborder="0" scrolling="no"></iframe>
 
     </div>
-    <div id="footerCSS" valign="middle" align="right"><div style="margin-right: 30px">Wiring With Women in Association with Duke University</div></div>
+    <div id="footerCSS" valign="middle" align="right">Wiring With Women in Association with Duke University</div>
+    <script>
+        var width = $(window).width();
+        
+        if (width < 750) {
+            $("#cal").hide();
+            $("#eventList").show();
+          
+        }
+        else {
+           
+            $("#cal").show();
+            $("#eventList").hide();
+        }
+       
+        $(window).resize(function () {
+            var width = $(window).width();
+            if (width < 750) {
+                $("#cal").hide();
+                $("#eventList").show();
+
+            }
+            else {
+
+                $("#cal").show();
+                $("#eventList").hide();
+            }
+        });
+
+    </script>
    
 </body>
 </html>
