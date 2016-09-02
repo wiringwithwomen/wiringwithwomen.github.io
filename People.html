@@ -9,270 +9,11 @@
         <script src="jquery.min.js"></script>
         <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-        <style>
-
-        body{
-            background: linear-gradient(rgba(1, 130, 172, 1), #f0f0f0 ); 
-        }
-
-        #navBar{
-            position: absolute; 
-            top: 0px; 
-            border-style: none; 
-            border-bottom-style: groove; 
-            border-color: rgba(1, 130, 172, 1);
-            border-width: 5px; 
-            background-color: #413f4d;
-            box-shadow: 2px 2px 20px 2px #413f4d; 
-            width: 100%; 
-        }
-        #myNavbar{
-            margin-right: 30px
-        }
-
-        #title{
-            color: #f0f0f0;
-            font-size: 20px; 
-            font-family: "Segoe UI"; 
-            letter-spacing: 2px; 
-        }
-
-        #navItems{
-            color: #f0f0f0; 
-            font-family: Consolas;
-            font-size: 20px; 
-        }
-
-        #mainPage{
-            width: 80%;
-            padding-bottom: 50px; 
-            margin-left: 10%;
-            background-color: #f0f0f0; 
-            margin-top: -20px; 
-            text-align: center; 
-            height: auto; 
-            margin-right: 10%; 
-        }
-
-        #pageTitle{
-            font-size: 60px; 
-            font-family: 'Segoe UI light'; 
-            padding: 50px;
-            padding-bottom: 10px;  
-            color: #552d87; 
-            letter-spacing: 3px;  
-            text-shadow: 1px 0px 1px 1px black;
-        }
-
-        #subPage{
-            background-color: rgba(1, 130, 172, 1); 
-            border-width: 5px;
-            width: 80%;  
-            height: 5px; 
-            color: white; 
-            
-
-            padding-top: 5px;
-            margin-left: 10%; 
-        }
-
-       #pageTable{
-           margin-left: 10%; 
-           margin-right: 10%; 
-       }
-
-        #pageTable td{
-            padding-top: 50px;
-            padding-right: 50px;
-            width: auto;
-            max-width: 20%; 
-        }
-
-         .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-                border-color: rgba(1, 130, 172, 1);
-            }
-
-           .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
-                color: #f0f0f0; 
-            }
-            .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
-                background-color: #f0f0f0; 
-            }
-            .navbar-default .navbar-nav > li > a{
-                color: #bdbdbd;
-            }
-        #profilePic{
-            border-width: 20px; 
-            border-style: double; 
-            border-color: rgba(1, 130, 172, 1); 
-            width: 275px;
-            height: 350px;
-        }
-        #mainContainer{
-            max-width: 90%; 
-            padding-top: 100px
-        }
-
-        #picTD{
-            font-family: 'segoe ui light';
-            padding-top: 50px; 
-            font-size: 54px; 
-            color: #552d87;
-            font-size: 32px; 
-            
-        }
-
-        #intro{
-            font-size: 16px; 
-            color: black; 
-            margin-top: 5px; 
-            text-shadow: none
-        }
-
-        #highlightedText{
-            color: rgba(1, 130, 172, 1); 
-            padding-top: 5px;
-        }
-
-        #footerCSS{
-            background-color: rgba(1, 130, 172, 1); 
-             
-            color: white; 
-            border-width: 5px; 
-            height: auto; 
-      
-            width: 100%; 
-            
-            font-family: 'Segoe UI Light';  
-            font-size: 20px; 
-            
-
-            padding: .5%; 
-            padding-right: 2%; 
-            border-width: 5px; 
-        }
-        @media only screen and (max-width: 1170px) and (min-width: 970px) {
-
-             #subPage{
-                   height: 2px; 
-                   border-width: 2px;
-                   padding-top: 4px;  
-               }
-
-              #mainContainer{
-                  padding: 50px; 
-              }
-              #profilePic {
-                    width: 225px;
-                    height: 300px;
-                    border-width: 10px;
-              }
-              #picTD{
-                  font-size: 28px; 
-              }
-
-              #intro{
-                  font-size: 14px; 
-              }
-
-
-        }
-        @media only screen and (max-width: 970px) and (min-width: 750px){
-
-                #subPage{
-                   height: 2px; 
-                   border-width: 2px;
-                   padding-top: 3px;  
-               }
-
-                #mainPage{
-                    width: 90%; 
-                    margin-left: 5%;
-                    margin-right: 5%; 
-                    height: auto; 
-                }
-                #footerCSS {
-                    font-size: 14px;
-                }
-
-                #pageTitle {
-                    width: 100%;
-                    font-size: 40px;
-
-                }
-
-                #picTD {
-                    font-size: 32px;
-                }
-
-                #intro {
-                    font-size: 16px;
-                }
-
-                #profilePic {
-                    width: 225px;
-                    height: 300px;
-                    border-width: 10px;
-                }
-
-                #mainContainer{
-                  padding: 50px; 
-                }
-            }
-
-            @media only screen and (max-width: 750px) {
-
-               #subPage{
-                   height: 2px; 
-                   border-width: 2px;
-                   padding-top: 0px;  
-               }
-
-                #mainContainer{
-                    
-                    padding: 10px; 
-                    padding-top: 50px; 
-                 }
-
-                #mainPage{
-                    width: 100%; 
-                    margin-left: 0%;
-                    height: auto; 
-                }
-
-                #footerCSS {
-                    font-size: 12px;
-                }
-
-                #pageTitle {
-                    width: 100%;
-                    font-size: 24px;
-
-                }
-
-                #picTD {
-                    font-size: 20px;
-                }
-
-                #intro {
-                    font-size: 12px;
-                }
-
-                #profilePic {
-                    width: 150px;
-                    height: 200px;
-                    border-width: 10px;
-                }
-
-              
-            }
-            
-
-    </style>
+        <link rel="stylesheet" href="wiringwithwomen.css">
 </head>
 
-
 <body>
+
     <nav class="navbar navbar-default" style="border-style: none; border-bottom-style: groove; border-color: rgba(1, 130, 172, 1); border-width: 5px; background-color:#413f4d; box-shadow: 2px 2px 20px 2px #413f4d">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -281,14 +22,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" style="color:#bdbdbd">Wiring With Women</a>
+                <a class="navbar-brand" href="#" style="color:#bdbdbd; font-size: 14px; font-family: 'segoe ui light'" >Wiring With Women</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" style="color:#bdbdbd; font-size: 14px; font-family: 'segoe ui light'">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">Events</a></li>
                     <li class="active"><a href="People.html">People</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a>
+                    <li>
                 </ul>
 
             </div>
@@ -368,7 +110,7 @@
 
                         </div>
                     </div>
-                    <div class="row" style="padding-top: 50px">
+                    <div class="row" style="padding-top: 50px; padding-bottom: 50px">
                         <div class="col-lg-5">
                             <img id="profilePic" src="jasmine lu.jpg" />
                         </div>
@@ -382,10 +124,10 @@
                             </div>
                         </div>
                     </div>
-             
             </div>
-        </div>
-    <div id="footerCSS" class="footer" valign="middle" align="right">Wiring With Women in Association with Duke University</div></div>
-
+          </div>
+        <div id="footerCSS" class=footer; valign="middle" align="right" style="background-color: #413f4d; color: #bdbdbd;">Wiring With Women in Association with Duke University</div>
+   
+   
 </body>
 </html>

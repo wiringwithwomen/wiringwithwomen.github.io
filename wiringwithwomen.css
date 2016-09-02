@@ -1,0 +1,529 @@
+body {
+    background:rgba(1, 130, 172, .7);
+    overflow-x: hidden;
+}
+
+#navBar{
+    position: absolute; 
+    top: 0px; 
+    border-style: none; 
+    border-bottom-style: groove; 
+    border-color: rgba(1, 130, 172, 1);
+    border-width: 5px; 
+    background-color: #413f4d;
+    box-shadow: 2px 2px 20px 2px #413f4d; 
+    width: 100%; 
+}
+
+#myNavbar{
+    margin-right: 30px;
+}
+
+
+#navItems{
+    color: #f0f0f0; 
+    font-family: Consolas;
+    font-size: 20px; 
+}
+
+#mainPage{
+    width: 80%; 
+    margin-left: 10%;
+    background-color: #f0f0f0; 
+    margin-top: -20px; 
+    text-align: center; 
+}
+
+#pageTitle{
+    font-size: 60px; 
+    font-family: 'Segoe UI light'; 
+    padding: 50px;
+    padding-bottom: 10px;  
+    color: #413f4d;
+    letter-spacing: 3px;              
+}
+
+ #subPage{
+    background-color: rgba(1, 130, 172, 1); 
+    border-width: 5px;
+    width: 80%;  
+    height: 1px; 
+    color: white; 
+    background-color: #413f4d;
+    margin-left: 10%; 
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+    border-color: rgba(1, 130, 172, 1);
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+    color: #f0f0f0; 
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
+    background-color: #f0f0f0; 
+}
+.navbar-default .navbar-nav > li > a{
+    color: #bdbdbd;
+}
+
+#footerCSS{
+    border-width: 5px; 
+    height: auto; 
+    width: 100%; 
+    font-family: 'Segoe UI Light';  
+    font-size: 14px; 
+    padding: .5%; 
+    padding-right: 2%; 
+    border-width: 5px; 
+    letter-spacing: 1px;
+    
+}
+
+.title{
+    width: 100%; 
+    padding: 50px; 
+    padding-bottom: 0px; 
+    font-family: 'segoe ui light'; 
+    padding-bottom: 0px; 
+    font-size: 32px; 
+    color:  #413f4d;
+}
+.circlePic{
+    background-color: #413f4d; border-radius: 100px; border-color: rgba(1, 130, 172, 1); border-style: solid; border-width: 3px; 
+    padding-top: 0px; margin-top: 30px;  margin-bottom: 25px; height: 150px; width: 150px; display: table-cell;
+}
+.circleText{
+    color: #413f4d; font-size: 20px;
+}
+
+#icon1{
+    width: 100px; 
+    height: auto;
+    
+}
+#icon2{
+    width: 70px;
+    height: auto;
+}
+#icon3{
+    width: 100px;
+    height: auto;
+}
+
+.secondText{
+    width: 70%; padding: 50px;  font-family: 'Segoe ui'; padding-top: 25px; font-size: 20px;   color: #F0F0F0;
+}
+.secondHeader{
+    width: 100%; padding: 50px; font-family: 'segoe ui light'; padding-bottom: 0px; font-size: 32px; color: #F0F0F0;
+}
+#subTitle{
+    font-family: 'Segoe ui light'; 
+    font-size: 24px; 
+    padding-top: 100px; 
+    margin-left: 10%; 
+    padding-left: 0px;  
+    padding-bottom: 50px; 
+    color: black;
+}
+#eventList{
+    font-family: 'Segoe ui'; 
+    font-size: 18px; 
+    padding-top: 30px;
+    margin-left: 10%; 
+    padding-left: 5%;  
+    padding-bottom: 50px; 
+    color: black;
+}
+
+.calendar{
+    border-width:0;  
+    padding-left: 10%; 
+    border-color: #0182ac; 
+    display: inline;
+    width: 70%;
+    position: absolute;
+}
+#input1{
+    border-color:#413f4d;
+    border-style: ridge; 
+    border-width: 1px; 
+    background-color: rgba(240, 240, 240, .3)
+}
+#bottomBox{
+    border: 2px ridge gray; display: none; margin-top: 100px; 
+}
+#inputButton{
+    padding: 5px; 
+    padding-right: 10px; 
+    padding-left: 10px;  
+    font-size: 16px; 
+    margin-right: 10px;   
+    border-style: none; 
+    background-color: rgba(85, 45, 135, 1); 
+    color: white; 
+    letter-spacing: 2px 
+}
+#contactText{
+    color: black;  
+    padding: 5px;  
+    font-size: 20px; 
+    font-family: 'Segoe UI light'
+}
+#pageTableContact{
+    padding-top: 50px; 
+    padding-right: 5%;
+    padding-left: 10%;    
+}
+#commentBox{
+    border-color: #413f4d;
+    border-style: ridge; 
+    border-width: 1px; 
+    height: 150px; 
+    width:500px; 
+    background-color: rgba(240, 240, 240, .3)
+}
+#tableText{
+    color: black; font-size: 20px; font-family: 'Segoe UI light';
+}
+#tableTitle{
+    font-size: 32px;
+    padding-bottom: 30px; 
+    font-family: "segoe ui light";
+}
+#connect{
+    display: normal;
+}
+#bottomBox{
+    display: none; 
+}
+#facebookLarge{
+    display: normal; 
+}
+ #pageTable{
+    margin-left: 10%; 
+    margin-right: 10%; 
+}
+
+#pageTable td{
+    padding-top: 50px;
+    padding-right: 50px;
+    width: auto;
+    max-width: 20%; 
+}
+#profilePic{
+    border-width: 20px; 
+    border-style: double; 
+    border-color: rgba(1, 130, 172, 1); 
+    width: 275px;
+    height: 350px;
+}
+#mainContainer{
+    max-width: 90%; 
+    padding-top: 100px
+}
+#picTD{
+    font-family: 'segoe ui light';
+    padding-top: 50px; 
+    font-size: 54px; 
+    color: #552d87;
+    font-size: 32px;   
+}
+#intro{
+    font-size: 16px; 
+    color: black; 
+    margin-top: 5px; 
+    text-shadow: none
+}
+#highlightedText{
+    color: rgba(1, 130, 172, 1); 
+    padding-top: 5px;
+}
+
+
+
+    @media only screen and (max-width: 750px) {
+        #picTD {
+            font-size: 20px;
+        }
+        #intro {
+            font-size: 12px;
+        }
+        #profilePic {
+            width: 150px;
+            height: 200px;
+            border-width: 10px;
+        }       
+        #icon1{
+            width: 50px; 
+        }
+        #footerCSS{
+            font-size: 12px;
+        }
+        #icon2{
+            width: 35px;  
+            height: auto;
+        }
+        #icon3{
+            width:50px; 
+            height: auto;
+        }
+        .title{
+            width: 100%; 
+            font-size: 20px; 
+        }
+        .circlePic{
+            width: 100px;
+            height: 100px;
+        }
+        .circleText{
+            font-size: 12px;   
+        }
+        .secondText{
+            font-size: 12px; 
+            width: 100%; 
+        }
+        .secondHeader{
+            font-size: 20px; 
+        }
+        #footerCSS {
+            font-size: 12px;
+        }
+        #subTitle{
+            font-size: 24px;   
+        }
+        #subPage {
+            height: 2px;
+            border-width: 2px;
+            padding-top: 0px;
+        }
+        .calendar{
+            padding-left: 2%; 
+            width: 80%; 
+            padding-right: 2%; 
+        }
+        #pageTitle {
+            width: 100%;
+            font-size: 24px;
+        }
+        #mainPage {
+            width: 100%;
+            margin-left: 0%;
+        }      
+        #inputButton{
+            font-size: 12px; 
+        }
+        #footerCSS {
+            font-size: 12px;
+            
+        }
+        #pageTitle {
+            width: 100%;
+            font-size: 24px;
+        }    
+        #input1 {
+            width: 200px;
+            height: auto;
+        }
+        #tableTitle {
+            font-size: 16px;  
+        }
+        #tableText {
+            padding-top: 50px;
+        }
+        #bottomBox {
+            display: table;
+            padding: 50px;
+        }
+        #contactText{
+            font-size: 14px; 
+        }
+        #facebookSmall{
+            display: normal;   
+        }
+        #facebookLarge{
+            display: none;   
+        }
+         .circlePic{
+            background-color: #413f4d; border-radius: 100px; border-color: rgba(1, 130, 172, 1); border-style: solid; border-width: 3px; 
+            padding-top: 0px; margin-top: 30px;  margin-bottom: 25px; height: 100px; width: 100px; display: table-cell;
+        }
+        #icon2{
+            width: 35px;  
+            height: auto;
+        }
+        #icon3{
+            width:50px; 
+            height: auto;
+        }
+        #icon1{
+            width:50px;
+            height: auto;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        #commentBox{
+            height: 100px; 
+            width: 275px; 
+        }
+        #inputButton{
+            font-size: 12px; 
+        }
+        #contactText{
+            font-size: 12px; 
+        }
+        #facebookSmall{
+            display: normal; 
+        }
+        #facebookLarge{
+            display: none;   
+        }
+        #icon2{
+            width: 20px;  
+            height: auto;
+        }
+        #icon3{
+            width:35px; 
+            height: auto;
+        }
+        #icon1{
+            width:35px;
+            height: auto;
+        }
+        .circlePic{
+            background-color: #413f4d; border-radius: 100px; border-color: rgba(1, 130, 172, 1); border-style: solid; border-width: 3px; 
+            padding-top: 0px; margin-top: 30px;  margin-bottom: 25px; height: 60px; width: 60px; display: table-cell;
+        }
+
+    }
+
+    @media only screen and (max-width: 1170px) and (min-width: 970px) {
+        #subPage{
+            height: 2px; 
+            border-width: 2px;
+            padding-top: 4px;  
+        }
+        #mainContainer{
+            padding: 50px; 
+        }
+        #tableTitle{
+            font-size: 28px; 
+        }
+        #pageTitle{
+            font-size: 40px; 
+        }
+        #bottomBox{
+            display: table; 
+            padding: 50px;  
+        }
+        #tableText{
+            padding-top: 50px; 
+        }
+        #facebookSmall{
+            display: none; 
+        }
+        #facebookLarge{
+            display: normal;   
+        }
+        #mainContainer{
+            padding: 50px; 
+        }
+        #profilePic {
+            width: 225px;
+            height: 300px;
+            border-width: 10px;
+        }
+        #picTD{
+            font-size: 28px; 
+        }
+
+        #intro{
+            font-size: 14px; 
+        }
+    }
+
+    @media only screen and (max-width: 1400px) and (min-width: 1170px){
+        #footerCSS {
+            font-size: 12px;
+        }
+        #subTitle{
+            font-size: 24px; 
+        }
+        #pageTitle {
+            width: 100%;
+            font-size: 40px;
+        }
+        .calendar{
+            padding-left: 2%; 
+            width: 80%; 
+            padding-right: 2%; 
+        }     
+         #tableTitle{
+            font-size: 28px; 
+        }
+        #bottomBox{
+            display: table; 
+            padding: 50px;  
+        }
+        #facebookSmall{
+            display: none; 
+        }
+        #facebookLarge{
+            display: normal;   
+        }
+    }
+
+    @media only screen and (max-width: 970px) and (min-width: 750px){
+
+        #subPage{
+            height: 2px; 
+            border-width: 2px;
+            padding-top: 3px;  
+        } 
+        #mainPage{
+            width: 90%; 
+            margin-left: 5%;
+            margin-right: 5%; 
+        }
+        #footerCSS {
+            font-size: 14px;
+        }
+        #tableTitle {
+            width: 100%;
+            font-size: 24px;
+        }
+        #pageTitle {
+            width: 100%;
+            font-size: 40px;
+        }
+        #bottomBox{
+            display: table; 
+            padding: 50px;  
+        }
+        #tableText{
+            padding-top: 50px; 
+        }
+        #facebookSmall{
+            display: none; 
+        }
+        #facebookLarge{
+            display: normal;   
+        }
+        #picTD {
+            font-size: 32px;
+        }
+        #intro {
+            font-size: 16px;
+        }
+        #profilePic {
+            width: 225px;
+            height: 300px;
+            border-width: 10px;
+        }
+        #mainContainer{
+            padding: 50px; 
+        }
+    }
+

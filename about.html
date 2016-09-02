@@ -12,264 +12,12 @@
         <script src="jquery.min.js"></script>
         <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-        <style>
-         
-             body{
-                background: linear-gradient(rgba(1, 130, 172, 1), #f0f0f0 ); 
-            }
-             #navBar{
-                position: absolute; 
-                top: 0px; 
-                border-style: none; 
-                border-bottom-style: groove; 
-                border-color: rgba(1, 130, 172, 1);
-                border-width: 5px; 
-                background-color: #413f4d;
-                box-shadow: 2px 2px 20px 2px #413f4d; 
-                width: 100%; 
-            }
-            #myNavbar{
-                margin-right: 30px
-            }
-
-            #title{
-                color: #f0f0f0;
-                font-size: 20px; 
-                font-family: "Segoe UI"; 
-                letter-spacing: 2px; 
-            }
-
-            .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-                border-color: rgba(1, 130, 172, 1);
-            }
-
-           .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
-                color: #f0f0f0; 
-            }
-            .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
-                background-color: #f0f0f0; 
-            }
-            .navbar-default .navbar-nav > li > a{
-                color: #bdbdbd;
-            }
-            #navItems{
-                color: #f0f0f0; 
-                font-family: Consolas;
-                font-size: 20px; 
-            }
-
-            #mainPage{
-                width: 80%; 
-                margin-left: 10%;
-                background-color: #f0f0f0; 
-                margin-top: -20px; 
-                text-align: center; 
-                height: 3000px;
-            }
-
-            #pageTitle{
-                font-size: 60px; 
-                font-family: 'Segoe UI light'; 
-                padding: 50px;
-                padding-bottom: 10px;  
-                color: #552d87; 
-                letter-spacing: 3px;  
-                text-shadow: 1px 0px 1px 1px black;
-            }
-
-            #subPage{
-            background-color: rgba(1, 130, 172, 1); 
-            border-width: 5px;
-            width: 80%;  
-            height: 5px; 
-            color: white; 
-            padding-top: 5px;
-            margin-left: 10%; 
-        }
-        #footerCSS{
-            background-color: rgba(1, 130, 172, 1); 
-            color: white; 
-            border-width: 5px; 
-            height: auto; 
-      
-            width: 100%; 
-            
-            font-family: 'Segoe UI Light';  
-            font-size: 20px; 
-            
-
-            padding: .5%; 
-            padding-right: 2%; 
-            border-width: 5px; 
-            
-        }
-            #horizSection{
-               background-color: rgba(1, 130, 172, 1); border-width: 5px; height: 5px; width: 80%; margin-left: 10%; color: white; font-family: 'Segoe UI Light';  font-size: 20px; padding-top: 7px;
-            }
-            #pageTitle{
-               font-size: 60px; font-family: 'Segoe ui light'; padding: 50px; text-align: center; padding-bottom: 10px;  color: #552d87; letter-spacing: 3px; text-shadow: 1px 0px 1px 1px black;
-            }
-
-            #subTitle{
-                font-family: 'Segoe ui light'; font-size: 24px; padding-top: 100px; margin-left: 10%; padding-left: 0px;  padding-bottom: 50px; color: black;
-            }
-            #eventList{
-                font-family: 'Segoe ui'; font-size: 18px; padding-top: 30px; margin-left: 10%; padding-left: 5%;  padding-bottom: 50px; color: black;
-            }
-
-            .calendar{
-                 border-width:0; 
-                 width: 70%; 
-                 padding-left: 10%; 
-                 border-color: #0182ac; 
-                 display: inline; 
-                 position: absolute;
-            }
-
-            @media only screen and (max-width: 1170px) and (min-width: 970px) {
-
-            #subPage{
-                height: 2px; 
-                border-width: 2px;
-                padding-top: 4px;  
-            }
-
-            #mainContainer{
-                padding: 50px; 
-            }
-           
-            
-            #tableTitle{
-                font-size: 28px; 
-            }
-            #pageTitle{
-                font-size: 40px; 
-            }
-            #bottomBox{
-                display: table; 
-                padding: 50px;  
-            }
-             #tableText{
-                    padding-top: 50px; 
-                }
-              #facebookSmall{
-                  display: none; 
-              }
-              #facebookLarge{
-                    display: normal;   
-                }
-        }
-
-            @media only screen and (max-width: 1400px) and (min-width: 1170px){
-
-
-                #footerCSS {
-                    font-size: 12px;
-                }
-
-                #subTitle{
-                    font-size: 24px; 
-                    
-                }
-
-                #pageTitle {
-                    width: 100%;
-                    font-size: 40px;
-                }
-                .calendar{
-                    padding-left: 2%; 
-                    width: 80%; 
-                    padding-right: 2%; 
-                }
-
-  
-                  
-            }
-
-             @media only screen and (max-width: 970px) and (min-width: 750px){
-
-                #subPage{
-                   height: 2px; 
-                   border-width: 2px;
-                   padding-top: 3px;  
-                }
-               
-                #mainPage{
-                    width: 90%; 
-                    margin-left: 5%;
-                    margin-right: 5%; 
-                   
-                }
-                #footerCSS {
-                    font-size: 14px;
-                    
-                }
-
-                #tableTitle {
-                    width: 100%;
-                    font-size: 24px;
-
-                }
-                #pageTitle {
-                    width: 100%;
-                    font-size: 40px;
-
-                }
-                
-               #bottomBox{
-                display: table; 
-                padding: 50px;  
-                }
-                #tableText{
-                    padding-top: 50px; 
-                }
-                 #facebookSmall{
-                    display: none; 
-                }
-                #facebookLarge{
-                    display: normal;   
-                }
-
-        
-            }
-            @media only screen and (max-width: 750px) {
-
-
-                #footerCSS {
-                    font-size: 12px;
-                }
-
-                 #subTitle{
-                    font-size: 24px; 
-                    
-                }
-                     #subPage {
-                    height: 2px;
-                    border-width: 2px;
-                    padding-top: 0px;
-                }
-
-                #pageTitle {
-                    width: 100%;
-                    font-size: 40px;
-                }
-                .calendar{
-                    padding-left: 2%; 
-                    width: 80%; 
-                    padding-right: 2%; 
-                }
-                 #pageTitle {
-                    width: 100%;
-                    font-size: 24px;
-                }
-            }
-
-
-        </style>
+        <link rel="stylesheet" href="wiringwithwomen.css">
 
     </head>
 
 <body>
+
     <nav class="navbar navbar-default" style="border-style: none; border-bottom-style: groove; border-color: rgba(1, 130, 172, 1); border-width: 5px; background-color:#413f4d; box-shadow: 2px 2px 20px 2px #413f4d">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -278,22 +26,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" style="color:#bdbdbd">Wiring With Women</a>
+                <a class="navbar-brand" href="#" style="color:#bdbdbd; font-size: 14px; font-family: 'segoe ui light'" >Wiring With Women</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" style="color:#bdbdbd; font-size: 14px; font-family: 'segoe ui light'">
                     <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="about.html">Events</a></li>
+                    <li class="active" ><a href="about.html">Events</a></li>
                     <li><a href="People.html">People</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">Contact</a>
+                    <li>
                 </ul>
 
             </div>
         </div>
     </nav>
-    <div style="width: 80%; margin-left: 10%;background-color: #f0f0f0; margin-top: 50px; height: 1500px">
-        <div id="pageTitle">Upcoming Events</div>
-        <div id="horizSection" valign="middle" align="right"></div>
+    <div style="width: 80%; margin-left: 10%; background-color: #f0f0f0; margin-top: -20px; height: 1500px">
+        <div id="pageTitle" align="center">Upcoming Events</div>
+        <div id="subPage" valign="middle" align="right"></div>
         <div  align="left" id="subTitle">Event Calendar:</div>
         <ul id="eventList">
             <li class="eventItem">There are currently no upcoming events</li>
@@ -304,7 +53,7 @@
                 class="calendar" height="1000" frameborder="0" scrolling="no"></iframe>
 
     </div>
-    <div id="footerCSS" valign="middle" align="right">Wiring With Women in Association with Duke University</div>
+    <div id="footerCSS" valign="middle" align="right" style="background-color: #413f4d; color: #bdbdbd">Wiring With Women in Association with Duke University</div>
     <script>
         var width = $(window).width();
         

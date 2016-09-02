@@ -10,180 +10,9 @@
         <script src="jquery.min.js"></script>
         <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-        
- <style>
-         
-               
-         body{
-            background: linear-gradient(rgba(1, 130, 172, 1), #f0f0f0 ); 
-        }
-         #navBar{
-            position: absolute; 
-            top: 0px; 
-            border-style: none; 
-            border-bottom-style: groove; 
-            border-color: rgba(1, 130, 172, 1);
-            border-width: 5px; 
-            background-color: #413f4d;
-            box-shadow: 2px 2px 20px 2px #413f4d; 
-            width: 100%; 
-        }
-        #myNavbar{
-            margin-right: 30px
-        }
-
-        #title{
-            color: #f0f0f0;
-            font-size: 20px; 
-            font-family: "Segoe UI"; 
-            letter-spacing: 2px; 
-        }
-
-        #navItems{
-            color: #f0f0f0; 
-            font-family: Consolas;
-            font-size: 20px; 
-        }
-
-        #mainPage{
-            width: 80%; 
-            margin-left: 10%;
-            background-color: #f0f0f0; 
-            margin-top: 20px; 
-            text-align: center; 
-            
-        }
-
-        #pageTitle{
-            font-size: 60px; 
-            font-family: 'Segoe UI light'; 
-            padding: 50px;
-            padding-bottom: 10px;  
-            color: #552d87; 
-            letter-spacing: 3px;  
-            text-shadow: 1px 0px 1px 1px black;
-        }
-
-        #subPage{
-            background-color: rgba(1, 130, 172, 1); 
-            border-width: 5px; 
-            height: 5px; 
-            width: 60%; 
-            margin-left: 20%; 
-            color: white; 
-            font-family: 'Segoe UI Light';  
-            font-size: 20px; 
-            padding-top: 7px;
-        }
-         .navbar-default .navbar-collapse, .navbar-default .navbar-form{
-                border-color: rgba(1, 130, 172, 1);
-            }
-
-           .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
-                color: #f0f0f0; 
-            }
-            .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover{
-                background-color: #f0f0f0; 
-            }
-            .navbar-default .navbar-nav > li > a{
-                color: #bdbdbd;
-            }
-
-        #footerCSS{
-            background-color:#f0f0f0;
-            
-            color:#552d87;
-            border-width: 5px; 
-            height: auto; 
-      
-            width: 100%; 
-            
-            font-family: 'Segoe UI Light';  
-            font-size: 20px; 
-            
-
-            padding: .5%; 
-            padding-right: 2%; 
-            border-width: 5px; 
-        }
-
-        .title{
-            width: 100%; 
-            padding: 50px; 
-            padding-bottom: 0px; 
-            font-family: 'segoe ui light'; 
-            padding-bottom: 0px; 
-            font-size: 60px; 
-            color:  #552d87;
-        }
-        .circlePic{
-            background-color: #f0f0f0; border-radius: 100px; padding-top: 0px; margin-top: 30px;border-style:double; border-color: rgba(1, 130, 172, 1); border-width: 4px; margin-bottom: 25px; height: 200px; width: 200px;
-        }
-        .circleText{
-            color: #552d87; font-size: 24px;
-        }
-
-        #icon1{
-           width: 100px; 
-           margin-top: 60px; 
-           height: auto;
-        }
-        #icon2{
-                    width: 70px; margin-top: 50px; height: auto;;
-                }
-        #icon3{width: 100px; margin-left: 5px; margin-top: 70px; height: auto;}
-
-        .secondText{
-            width: 70%; padding: 50px;  font-family: 'Segoe ui'; padding-top: 25px; font-size: 24px;   color: #F0F0F0;
-        }
-        .secondHeader{
-            width: 100%; padding: 50px; font-family: 'segoe ui light'; padding-bottom: 0px; font-size: 24px; font-size: 60px; color: #F0F0F0;
-        }
-       
-
-            @media only screen and (max-width: 750px) {
-
-                #icon1{
-                    width: 50px; 
-                    margin-top: 30px;
-                }
-                #footerCSS{
-                    font-size: 12px;
-                }
-                #icon2{
-                    width: 35px; margin-top: 25px; height: auto;;
-                }
-                #icon3{width:50px; margin-left: 2.5px; margin-top: 35px; height: auto;}
-                
-                .title{
-                    width: 100%; 
-                    font-size: 24px; 
-                }
-                .circlePic{
-                    width: 100px;
-                    height: 100px;
-                }
-                .circleText{
-                    font-size: 12px;
-                    
-                }
-                .secondText{
-                    font-size: 12px; 
-                    width: 100%; 
-                }
-                .secondHeader{
-                    font-size: 24px; 
-                }
-                
-            }
-
-        </style>
-   
+        <link rel="stylesheet" href="wiringwithwomen.css">
 </head>
 <body>
-   
-   
-
     <nav class="navbar navbar-default" style="border-style: none; border-bottom-style: groove; border-color: rgba(1, 130, 172, 1); border-width: 5px; background-color:#413f4d; box-shadow: 2px 2px 20px 2px #413f4d">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -192,10 +21,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" style="color:#bdbdbd">Wiring With Women</a>
+                <a class="navbar-brand" href="#" style="color:#bdbdbd; font-size: 14px; font-family: 'segoe ui light'" >Wiring With Women</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" style="color:#bdbdbd; font-size: 14px; font-family: 'segoe ui light'">
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="about.html">Events</a></li>
                     <li><a href="People.html">People</a></li>
@@ -210,59 +39,55 @@
 
       
 
-        <img src="duke2.png" style="width: 100%; border-bottom-style: groove; border-bottom-color: rgba(1, 130, 172, 1); border-bottom-width: 5px; margin-top: -20px; height: auto" />
+        <img src="duke2.png" style="width: 101%; border-bottom-style: groove; border-bottom-color: rgba(1, 130, 172, 1); border-bottom-width: 5px; margin-top: -20px; height: auto" />
         <div class="container" style="position: absolute; top: 0px">
-
-
         </div>
         <div style="background-color: #F0F0F0; padding-bottom: 100px">
             <div id="About" align="center" class="title"><strong>About Us</strong></div>
-            <hr style="width: 60%; border-width: 1px; border-color:#552d87; padding-bottom: 0px" />
-            <table align="center" style="width: 60%; padding-left: 10px; padding-top: 0px;  font-family: 'Segoe UI'">
+            <hr style="width: 60%; border-width: 1px; border-color:#413f4d; padding-bottom: 0px" />
+            <table cellspacing="20" align="center" style="width: 60%; padding-left: 10px; margin-top: 60px; font-family: 'Segoe UI'">
                 <tr>
-                    <td align="center" class="circleText">
-                        <div class="circlePic">
-                            <div align="center"><img valign="middle" id="icon1" src="icon1.png" /></div>
+                    <td align="center" class="circleText" valign="middle" style="width: 30%">
+                        <div class="circlePic" align="center" valign="middle">
+                            <img id="icon1"  src="icon1white.png" />
                         </div>
                     </td>
-                    <td align="center" class="circleText">
-                        <div class="circlePic">
-                            <div align="center"><img valign="middle" id="icon2" src="icon2.png" /></div>
+                    <td align="center" class="circleText" valign="middle" style="width: 30%">
+                        <div class="circlePic" align="center" valign="middle">
+                                <img  id="icon2" src="icon2white.png" /></div>
                         </div>
                     </td>
-                    <td align="center" class="circleText">
-                        <div class="circlePic">
-                            <div style="color: #552d87 " align="center"><img valign="middle" id="icon3" src="icon1.1.png" /></div>
+                    <td align="center" class="circleText" valign="middle" style="width: 30%">
+                        <div class="circlePic" align="center" valign="middle">
+                            <img valign="middle" id="icon3" src="icon3white.png" /></div>
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <td align="center" class="circleText">
-                        Want to Network?
+                <tr >
+                    <td align="center" class="circleText" style="width: 30%">
+                        <div style="margin-top: 20px">Like to Code?</div>
 
                     </td>
-                    <td align="center" class="circleText">
-                        Need Help With Assignments?
+                    <td align="center" class="circleText" style="width: 30%">
+                        <div style="margin-top: 20px">Need Help with Assignments?</div>
 
                     </td>
-                    <td align="center" class="circleText">
-                        Like to Code?
+                    <td align="center" class="circleText" style="width: 30%">
+                        <div style="margin-top: 20px">Want to Network? </div>
 
                     </td>
                 </tr>
             </table>
         </div>
-
-
-        <div style="background-color: rgba(1, 130, 172, 1)">
+        <div style="background-color: rgba(1, 130, 172, 1); padding-bottom: 50px; ">
             <div id="About" align="center" class="secondHeader"><strong>Who We Are</strong></div>
             <hr style="width: 60%; border-width: 1px; border-color:#F0F0F0 " />
             <div align="center" style="width: 100%">
                 <div align="center" class="secondText" valign="middle">Wiring With Women is an undergraduate organization at Duke University focused on supporting women in computing. We aim to build and strengthen a supportive community for women in computer science and engineering, provide educational and professional opportunities, and raise awareness around the issues women in the field face.
-</div>
+                </div>
             </div>
         </div>
 
-        <div id="footerCSS" valign="middle" class="footer" align="right"><strong>Wiring With Women in Association with Duke University</strong></div></div>
+        <div id="footerCSS" valign="middle" class="footer" align="right" style="background-color:#f0f0f0; rgba(85, 45, 135, .7); "><strong>Wiring With Women in Association with Duke University</strong></div></div>
     </body>
 </html>
