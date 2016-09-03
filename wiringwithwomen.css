@@ -5,8 +5,7 @@ html, body {
     background:rgba(1, 130, 172, .7);
     -ms-overflow-style: hidden;
     overflow-x: hidden;
-    height: 100%; 
-    background: white;
+    height: 100%;
 }
 .wrapper{
     min-height: 100%; 
@@ -438,7 +437,8 @@ html{
             font-size: 10px;
             text-align: center;
             padding-right: 0px; 
-            padding-left: 0px; 
+            padding-left: 0px;
+            font-family: "'Segoe UI Light'";
         }
         #about{
             display: none; 
@@ -446,10 +446,12 @@ html{
         .secondHeader{
             text-align: left; 
             font-size: 24px; 
+            margin-left: 5px; 
         }
         .secondText{
             text-align: left; 
             font-size: 18px; 
+            margin-left: 5px; 
         }
 
 
