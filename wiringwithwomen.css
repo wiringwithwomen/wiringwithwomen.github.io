@@ -168,9 +168,7 @@ html{
     border-color: #0182ac; 
     display: inline;
     width: 70%;
-    
-    margin-left: 0px;
-    margin-left: 4%;
+    text-align: center;
 }
 #input1{
     border-color:#413f4d;
