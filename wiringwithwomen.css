@@ -437,6 +437,19 @@ html{
         #footerCSS{
             font-size: 10px;
             text-align: center;
+            padding-right: 0px; 
+            padding-left: 0px; 
+        }
+        #about{
+            display: none; 
+        }
+        .secondHeader{
+            text-align: left; 
+            font-size: 24px; 
+        }
+        .secondText{
+            text-align: left; 
+            font-size: 18px; 
         }
 
 
