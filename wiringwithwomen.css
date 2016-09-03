@@ -167,7 +167,9 @@ html{
     border-width:0;  
     border-color: #0182ac; 
     display: inline;
-    width: 70%;
+    width: 80%;
+    margin-left: 10%; 
+    margin-right: 10%; 
     text-align: center;
 }
 #input1{
