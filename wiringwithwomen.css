@@ -1,6 +1,30 @@
-body {
+*{
+    margin: 0;
+}
+html, body {
     background:rgba(1, 130, 172, .7);
+    -ms-overflow-style: hidden;
     overflow-x: hidden;
+    height: 100%; 
+    background: white;
+}
+.wrapper{
+    min-height: 100%; 
+}
+
+.wrapper:after{
+    content:"";
+    display: block;
+    
+}
+
+html{
+    overflow-x: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+::-webkit-scrollbar-button:horizontal{
+    display: none; 
 }
 
 #navBar{
@@ -77,6 +101,10 @@ body {
     padding-right: 2%; 
     border-width: 5px; 
     letter-spacing: 1px;
+    padding-top: 10px; 
+    text-align: right; 
+    padding-bottom: 10px;
+    height: 40px; 
     
 }
 
@@ -112,7 +140,7 @@ body {
 }
 
 .secondText{
-    width: 70%; padding: 50px;  font-family: 'Segoe ui'; padding-top: 25px; font-size: 20px;   color: #F0F0F0;
+    width: 80%; padding: 50px;  font-family: 'Segoe ui'; padding-top: 25px; font-size: 20px;   color: #F0F0F0;
 }
 .secondHeader{
     width: 100%; padding: 50px; font-family: 'segoe ui light'; padding-bottom: 0px; font-size: 32px; color: #F0F0F0;
@@ -142,6 +170,8 @@ body {
     display: inline;
     width: 70%;
     position: absolute;
+    margin-left: 0px;
+    margin-left: 4%;
 }
 #input1{
     border-color:#413f4d;
@@ -238,6 +268,26 @@ body {
     color: rgba(1, 130, 172, 1); 
     padding-top: 5px;
 }
+#underline{
+    width: 80%; 
+    margin-top: 10px; 
+    margin-bottom: 20px; 
+    margin-left: 10%; 
+    border-width: .5px; 
+    border-style: solid; 
+    border-color:#F0F0F0;
+    align-content: left;
+}
+#underline2{
+    width: 80%; 
+    margin-top: 10px; 
+    margin-bottom: 20px; 
+    margin-left: 10%; 
+    border-width: .5px; 
+    border-style: solid; 
+    border-color:#413f4d;
+    align-content: left;
+}
 
 
 
@@ -258,6 +308,8 @@ body {
         }
         #footerCSS{
             font-size: 12px;
+            text-align: right; 
+            padding-right: 3%;
         }
         #icon2{
             width: 35px;  
@@ -281,6 +333,9 @@ body {
         .secondText{
             font-size: 12px; 
             width: 100%; 
+        }
+        #about{
+            visibility: visible;
         }
         .secondHeader{
             font-size: 20px; 
@@ -367,9 +422,6 @@ body {
             height: 100px; 
             width: 275px; 
         }
-        #footerCSS{
-            font-size: 10px;
-        }
         #inputButton{
             font-size: 12px; 
         }
@@ -382,31 +434,10 @@ body {
         #facebookLarge{
             display: none;   
         }
-        #icon2{
-            width: 20px;  
-            height: auto;
+        #footerCSS{
+            font-size: 10px;
+            text-align: center;
         }
-        .secondText{
-            padding-top: 10px;
-            width: 100%;
-        }
-        #icon3{
-            width:35px; 
-            height: auto;
-        }
-        #icon1{
-            width:35px;
-            height: auto;
-        }
-    .circlePic{
-        background-color: #413f4d; border-radius: 100px; 
-        padding-top: 0px; margin-top: 30px; margin-bottom: 25px; height: 60px; width: 60px; display: table-cell; vertical-align: middle;  
-    }
-
-    .secondHeader{
-        padding-top: 2em; 
-        padding-bottom: 0;
-    }
 
 
     @media only screen and (max-width: 1170px) and (min-width: 970px) {
