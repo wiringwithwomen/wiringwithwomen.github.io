@@ -92,19 +92,18 @@ html{
 
 #footerCSS{
     border-width: 5px; 
-    height: auto; 
     width: 100%; 
     font-family: 'Segoe UI Light';  
     font-size: 14px; 
     padding: .5%; 
     padding-right: 2%; 
+    padding-left: 2%;
     border-width: 5px; 
     letter-spacing: 1px;
     padding-top: 10px; 
-    text-align: right; 
     padding-bottom: 10px;
     height: 40px; 
-    
+    text-align:right;
 }
 
 .title{
