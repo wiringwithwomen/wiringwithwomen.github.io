@@ -1,4 +1,4 @@
-body {
+centerbody {
   font-family: Roboto, sans-serif;
   color: #333;
   font-size: 14px;
@@ -1008,7 +1008,7 @@ p {
   float: right;
 }
 
-.jasmineimage {
+.execimage {
   display: inline-block;
   overflow: visible;
   margin-left: 0px;
@@ -1023,15 +1023,16 @@ p {
   text-align: center;
 }
 
-.jasmineimage:hover {
+.execimage:hover {
   border-style: none;
   border-color: #000;
+  opacity: 0.3;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.jasmineimage:active {
+.execimage:active {
   display: inline-block;
   overflow: visible;
   background-image: -webkit-linear-gradient(270deg, #000, #fff);
@@ -1190,15 +1191,15 @@ p {
 
 .nameoverlay {
   position: absolute;
-  left: 0px;
+  left: 0%;
   top: 0px;
   right: 0px;
   bottom: 0px;
-  display: block;
+  display: inline-block;
   overflow: visible;
-  width: 70%;
-  height: 100%;
-  margin-left: 15%;
+  width: 38vh;
+  height: 38vh;
+  margin: auto;
   padding-right: 0px;
   padding-bottom: 0px;
   clear: both;
@@ -1226,9 +1227,14 @@ p {
   direction: ltr;
   color: #fff;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
 }
 
+.nametext{
+  position:absolute;
+  bottom: 5;
+  left: 5;
+}
 .personcontainer {
   display: block;
   -webkit-flex-wrap: wrap;
@@ -1299,17 +1305,17 @@ p {
   justify-content: flex-start;
 }
 
-.heading-15 {
+.popupPosition {
   margin-top: 0px;
   color: #fff;
 }
 
-.heading-16 {
+.popupName{
   margin-bottom: 0px;
   color: #fff;
 }
 
-.text-block-2 {
+.popupText {
   color: #f8ecec;
 }
 
@@ -1367,7 +1373,7 @@ p {
     margin-left: 0px;
     float: right;
   }
-  .jasmineimage {
+  .execimage {
     overflow: visible;
     margin-right: 0%;
     margin-left: 0%;
@@ -1478,7 +1484,7 @@ p {
   .cubedlogo {
     float: right;
   }
-  .jasmineimage {
+  .execimage {
     float: none;
   }
   .image-6 {
@@ -1567,7 +1573,7 @@ p {
     margin-bottom: 5%;
     float: none;
   }
-  .jasmineimage {
+  .execimage {
     float: none;
   }
   .image-6 {
@@ -1609,4 +1615,3 @@ p {
     padding-left: 1%;
   }
 }
-
