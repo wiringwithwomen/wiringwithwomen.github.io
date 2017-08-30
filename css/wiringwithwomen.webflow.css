@@ -12,7 +12,9 @@ h1 {
   line-height: 45px;
   font-weight: 300;
 }
-
+#mc_embed_signup{
+  background-color: #26acf5;
+}
 h2 {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -1215,4 +1217,3 @@ p {
     text-align: center;
   }
 }
-
