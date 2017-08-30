@@ -1197,8 +1197,8 @@ p {
   bottom: 0px;
   display: inline-block;
   overflow: visible;
-  width: 38vh;
-  height: 38vh;
+  width: 35vh;
+  height: 35vh;
   margin: auto;
   padding-right: 0px;
   padding-bottom: 0px;
@@ -1232,8 +1232,9 @@ p {
 
 .nametext{
   position:absolute;
-  bottom: 5;
-  left: 5;
+  font-family: 'Helvetica Neue', sans-serif;
+  bottom: 2%;
+  left: 2%;
 }
 .personcontainer {
   display: block;
