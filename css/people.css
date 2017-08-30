@@ -1197,8 +1197,8 @@ p {
   bottom: 0px;
   display: inline-block;
   overflow: visible;
-  width: 35vh;
-  height: 35vh;
+  width: 49vh;
+  height: 49vh;
   margin: auto;
   padding-right: 0px;
   padding-bottom: 0px;
@@ -1230,7 +1230,7 @@ p {
   text-align: left;
 }
 
-.nametext{
+.nameText{
   position:absolute;
   font-family: 'Helvetica Neue', sans-serif;
   bottom: 2%;
